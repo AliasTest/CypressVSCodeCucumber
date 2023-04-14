@@ -1,0 +1,102 @@
+[
+  {
+    "description": "As a valid user, check new tour application start",
+    "keyword": "Feature",
+    "name": "NewTour Verification",
+    "line": 1,
+    "id": "newtour-verification",
+    "tags": [],
+    "uri": "newtours.feature",
+    "elements": [
+      {
+        "id": "newtour-verification;newtour-start-application",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "NewTour Start application",
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Start new tour application",
+            "result": {
+              "status": "passed",
+              "duration": 16601000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Verify the title",
+            "result": {
+              "status": "passed",
+              "duration": 27000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Test",
+            "result": {
+              "status": "passed",
+              "duration": 11000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "newtour-verification;newtour-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "NewTour Login",
+        "tags": [
+          {
+            "name": "@smoke1",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Start new tour application",
+            "result": {
+              "status": "passed",
+              "duration": 3072000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "Enter user name \"username\"",
+            "result": {
+              "status": "failed",
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `password`, but never found it.\n    at Context.eval (cypress/e2e/newtours/newtours.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "Test",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
