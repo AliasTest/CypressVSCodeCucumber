@@ -9,5 +9,5 @@ Then Test
 @smoke1
 Scenario: NewTour Login
 Given Start new tour application
-When Enter user name "username"
+When Enter user name "usertest"
 Then Test

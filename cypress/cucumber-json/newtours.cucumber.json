@@ -28,7 +28,7 @@
             "name": "Start new tour application",
             "result": {
               "status": "passed",
-              "duration": 16601000000
+              "duration": 5228000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 30000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "Test",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 15000000
             }
           }
         ]
@@ -73,17 +73,17 @@
             "name": "Start new tour application",
             "result": {
               "status": "passed",
-              "duration": 3072000000
+              "duration": 2376000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 12,
-            "name": "Enter user name \"username\"",
+            "name": "Enter user name \"usertest\"",
             "result": {
-              "status": "failed",
-              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `password`, but never found it.\n    at Context.eval (cypress/e2e/newtours/newtours.js:16:7)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 492000000
             }
           },
           {
@@ -92,7 +92,8 @@
             "line": 13,
             "name": "Test",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 13000000
             }
           }
         ]
