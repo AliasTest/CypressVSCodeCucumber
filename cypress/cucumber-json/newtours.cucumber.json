@@ -28,7 +28,7 @@
             "name": "Start new tour application",
             "result": {
               "status": "passed",
-              "duration": 5228000000
+              "duration": 7252000000
             }
           },
           {
@@ -38,7 +38,7 @@
             "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 45000000
             }
           },
           {
@@ -48,7 +48,7 @@
             "name": "Test",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 30000000
             }
           }
         ]
@@ -73,7 +73,7 @@
             "name": "Start new tour application",
             "result": {
               "status": "passed",
-              "duration": 2376000000
+              "duration": 2245000000
             }
           },
           {
@@ -83,7 +83,7 @@
             "name": "Enter user name \"usertest\"",
             "result": {
               "status": "passed",
-              "duration": 492000000
+              "duration": 701000000
             }
           },
           {
@@ -93,7 +93,7 @@
             "name": "Test",
             "result": {
               "status": "passed",
-              "duration": 13000000
+              "duration": 22000000
             }
           }
         ]
