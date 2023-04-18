@@ -28,7 +28,7 @@
             "name": "Start new tour application",
             "result": {
               "status": "passed",
-              "duration": 7252000000
+              "duration": 5239000000
             }
           },
           {
@@ -38,17 +38,18 @@
             "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 45000000
+              "duration": 47000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "Test",
+            "name": "I should see web audit results",
             "result": {
-              "status": "passed",
-              "duration": 30000000
+              "status": "failed",
+              "duration": 43593000000,
+              "error_message": "Error: cy.lighthouse - Some thresholds have been crossed.\n\nperformance record is 59 and is under the 95 threshold\naccessibility record is 75 and is under the 100 threshold\nbest-practices record is 57.99999999999999 and is under the 95 threshold\nseo record is 54 and is under the 85 threshold\npwa record is 0 and is under the 100 threshold\n    at Context.eval (node_modules/@cypress-audit/lighthouse/src/command-handler.js:75:0)\nFrom previous event:\n    at Context.thenFn (https://demo.guru99.com/__cypress/runner/cypress_runner.js:135704:63)\n    at Context.then (https://demo.guru99.com/__cypress/runner/cypress_runner.js:135953:21)\n    at wrapped (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151182:19)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150008:15)\nFrom previous event:\n    at CommandQueue.runCommand (https://demo.guru99.com/__cypress/runner/cypress_runner.js:149974:8)\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150174:19)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150195:16)\nFrom previous event:\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150174:39)\nFrom previous event:\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:163756:77)\nFrom previous event:\n    at CommandQueue.run (https://demo.guru99.com/__cypress/runner/cypress_runner.js:163751:21)\n    at CommandQueue.run (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150238:15)\n    at $Cy.runQueue (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151162:14)\n    at cy.<computed> [as then] (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151244:12)\n    at runnable.fn (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151423:19)\n    at callFn (https://demo.guru99.com/__cypress/runner/cypress_runner.js:104964:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://demo.guru99.com/__cypress/runner/cypress_runner.js:104951:7)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158412:30)\nFrom previous event:\n    at Object.onRunnableRun (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158395:53)\n    at $Cypress.action (https://demo.guru99.com/__cypress/runner/cypress_runner.js:147632:28)\n    at Runnable.run (https://demo.guru99.com/__cypress/runner/cypress_runner.js:156392:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105623:10)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105749:12)\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105532:14)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105542:7)\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105444:14)\n    at Hook.<anonymous> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105505:7)\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158306:24)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158333:13)\nFrom previous event:\n    at onNext (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158330:59)\n    at done (https://demo.guru99.com/__cypress/runner/cypress_runner.js:104904:5)\n    at callFn (https://demo.guru99.com/__cypress/runner/cypress_runner.js:104987:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (https://demo.guru99.com/__cypress/runner/cypress_runner.js:104951:7)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158412:30)\nFrom previous event:\n    at Object.onRunnableRun (https://demo.guru99.com/__cypress/runner/cypress_runner.js:158395:53)\n    at $Cypress.action (https://demo.guru99.com/__cypress/runner/cypress_runner.js:147632:28)\n    at Runnable.run (https://demo.guru99.com/__cypress/runner/cypress_runner.js:156392:13)\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105466:10)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:105510:5)\n    at timeslice (https://demo.guru99.com/__cypress/runner/cypress_runner.js:99436:27)"
             }
           }
         ]
@@ -73,7 +74,7 @@
             "name": "Start new tour application",
             "result": {
               "status": "passed",
-              "duration": 2245000000
+              "duration": 4023000000
             }
           },
           {
@@ -83,17 +84,17 @@
             "name": "Enter user name \"usertest\"",
             "result": {
               "status": "passed",
-              "duration": 701000000
+              "duration": 475000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "Test",
+            "name": "I should see web audit results",
             "result": {
-              "status": "passed",
-              "duration": 22000000
+              "status": "failed",
+              "error_message": "Error: cy.lighthouse - Some thresholds have been crossed.\n\nperformance record is 55.00000000000001 and is under the 95 threshold\naccessibility record is 75 and is under the 100 threshold\nbest-practices record is 57.99999999999999 and is under the 95 threshold\nseo record is 54 and is under the 85 threshold\npwa record is 0 and is under the 100 threshold\n    at Context.eval (node_modules/@cypress-audit/lighthouse/src/command-handler.js:75:0)\nFrom previous event:\n    at Context.thenFn (https://demo.guru99.com/__cypress/runner/cypress_runner.js:135704:63)\n    at Context.then (https://demo.guru99.com/__cypress/runner/cypress_runner.js:135953:21)\n    at wrapped (https://demo.guru99.com/__cypress/runner/cypress_runner.js:151182:19)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150008:15)\nFrom previous event:\n    at CommandQueue.runCommand (https://demo.guru99.com/__cypress/runner/cypress_runner.js:149974:8)\n    at next (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150174:19)\n    at <unknown> (https://demo.guru99.com/__cypress/runner/cypress_runner.js:150195:16)"
             }
           }
         ]
