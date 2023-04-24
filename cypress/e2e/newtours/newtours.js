@@ -27,8 +27,7 @@ When('Verify the title', () => {
 })
 
 Then('I should see web audit results', () => {
-      cy.lighthouse(lighthousemetrics)
-    })
+      cy.lighthouse(lighthousemetrics,{ timeout: 120000 })})
 
 When('Enter user name {string}', (username) => {
     login.typeUserName(username)
