@@ -11,7 +11,20 @@ const lighthousemetrics = {
     "best-practices": 95,
     seo: 85,
     pwa: 100,
+    "first-contentful-paint": 10,
 };
+
+const opts = {
+    formFactor: 'desktop',
+    screenEmulation: {
+      mobile: false,
+      disable: false,
+      width: Cypress.config('viewportWidth'),
+      height: Cypress.config('viewportHeight'),
+      deviceScaleRatio: 1,
+    },
+}
+
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginpage from '../pages/LoginPage'
 
@@ -27,7 +40,7 @@ When('Verify the title', () => {
 })
 
 Then('I should see web audit results', () => {
-      cy.lighthouse(lighthousemetrics,{ timeout: 120000 })})
+      cy.lighthouse(lighthousemetrics, opts)})
 
 When('Enter user name {string}', (username) => {
     login.typeUserName(username)
