@@ -44,4 +44,4 @@ Then('I should see web audit results', () => {
 
 When('Enter user name {string}', (username) => {
     login.typeUserName(username)
-})  
+}) 
