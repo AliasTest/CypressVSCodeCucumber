@@ -16,4 +16,5 @@ steps:
 - script: |
     npm install   
     npm run smoketest
+    npm run htmlreport
   displayName: 'Run a multi-line script'
