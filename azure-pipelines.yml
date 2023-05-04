@@ -16,13 +16,9 @@ steps:
 - script: |
     npm install   
     npm run smoketest:allure
-    npm run report:allure
-    npm run report:allure:Open      
+    npm run report:allure    
   displayName: 'Run a multi-line script'
 
-       # Publish Allure report as build artifact
-      - task: PublishBuildArtifacts@1
-        inputs:
-          PathtoPublish: 'allure-report'
-          ArtifactName: 'Allure Report'
-          publishLocation: 'Container'
+PathtoPublish: 'allure-report'
+ArtifactName: 'Allure Report'
+publishLocation: 'Container'
