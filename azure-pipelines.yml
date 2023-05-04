@@ -19,3 +19,10 @@ steps:
     npm run report:allure
     npm run report:allure:Open      
   displayName: 'Run a multi-line script'
+
+       # Publish Allure report as build artifact
+      - task: PublishBuildArtifacts@1
+        inputs:
+          PathtoPublish: 'allure-report'
+          ArtifactName: 'Allure Report'
+          publishLocation: 'Container'
