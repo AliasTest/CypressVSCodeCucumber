@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "smoketest": "npx cypress run -e \"TAGS= @Sanity \" --browser chrome --headed"
+    "smoketest": "npx cypress run -e \"TAGS= @Sanity \" --browser chrome --headed",
+    "smoketest:allure": "npx cypress run -e \"TAGS= @Sanity \" --browser chrome --headed --env allure=true",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report",
+    "report:allure:Open": "npx allure open"       
   },
   "keywords": [
     "cypress"
@@ -14,6 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "@cypress-audit/lighthouse": "^1.4.2",
+    "@shelex/cypress-allure-plugin": "^2.38.4",
     "cucumber-html-reporter": "^6.0.0",
     "cypress": "^12.10.0",
     "cypress-cucumber-preprocessor": "^4.3.1",

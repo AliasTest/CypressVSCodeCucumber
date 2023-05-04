@@ -15,5 +15,7 @@ steps:
 
 - script: |
     npm install   
-    npm run smoketestallurereport
+    npm run smoketest:allure
+    npm run report:allure
+    npm run report:allure:Open      
   displayName: 'Run a multi-line script'

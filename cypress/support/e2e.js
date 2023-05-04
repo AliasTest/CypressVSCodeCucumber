@@ -18,3 +18,4 @@
 // Alternatively you can use CommonJS syntax:
  //require('./commands')
  import "@cypress-audit/lighthouse/commands";
+ import "@shelex/cypress-allure-plugin"
