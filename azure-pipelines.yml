@@ -20,6 +20,7 @@ steps:
     npm install -g allure-commandline --save-dev  
     npm run smoketest:allure
     npm run report:allure    
+    npm run report:allure:Open
   displayName: 'Run a multi-line script'
   
 - task: PublishBuildArtifacts@1
