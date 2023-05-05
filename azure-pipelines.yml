@@ -24,7 +24,7 @@ steps:
   
 - task: CopyFiles@2
   inputs:
-    SourceFolder: '$(Build.SourcesDirectory)/allure-report'. 
+    SourceFolder: '$(Build.SourcesDirectory)/allure-report' 
     Contents: '**' # string. Required. Contents. Default: **.    
     TargetFolder: '$(Build.ArtifactStagingDirectory)' 
     
