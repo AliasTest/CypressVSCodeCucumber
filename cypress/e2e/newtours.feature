@@ -1,6 +1,6 @@
 Feature: NewTour Verification
 As a valid user, check new tour application start
-@Sanity
+@Sanity1
 Scenario: NewTour Start application
 Given Start new tour application
 When Verify the title
