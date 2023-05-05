@@ -7,7 +7,7 @@ trigger:
 - cypressmain
 
 pool:
-  vmImage: windows-2022
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Hello, world!
