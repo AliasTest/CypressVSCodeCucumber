@@ -23,7 +23,7 @@ steps:
   displayName: 'Run a multi-line script'
   
 - task: PublishBuildArtifacts@1
-  inputs:
+  inputs:   
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'allure-report'
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)/allure-report' 
     publishLocation: 'Container'    
