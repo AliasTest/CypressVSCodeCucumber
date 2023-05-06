@@ -33,3 +33,12 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'allure-report'
     publishLocation: 'Container'    
+- task: PublishTestResults@2
+  displayName: publish allure test results
+  inputs:
+    testResultsFormat: 'VSTest'
+    testResultsFiles: '*.html'
+    searchFolder: 'allure-report'
+    testRunTitle: ublish allure test results
+    buildConfiguration: debug
+    mergeTestResults: true
