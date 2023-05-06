@@ -19,7 +19,8 @@ steps:
     npm install   
     npm install -g allure-commandline --save-dev  
     npm run smoketest:allure
-    npm run report:allure    
+    npm run report:allure
+     npm run report:allure:Open    
   displayName: 'Run a multi-line script'
   
 - task: CopyFiles@2
@@ -42,3 +43,4 @@ steps:
     testRunTitle: ublish allure test results
     buildConfiguration: debug
     mergeTestResults: true
+    
