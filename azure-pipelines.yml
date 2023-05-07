@@ -19,8 +19,7 @@ steps:
     npm install   
     npm install -g allure-commandline --save-dev  
     npm run smoketest:allure
-    npm run report:allure
-     npm run report:allure:Open    
+    npm run report:allure  
   displayName: 'Run a multi-line script'
   
 - task: CopyFiles@2
@@ -34,6 +33,20 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)' 
     artifactName: 'allure-report'
     publishLocation: 'Container'    
+# Publish build artifacts to Azure Pipelines
+- task: PublishPipelineArtifact@1
+  condition: succeededOrFailed()
+  inputs:
+    targetPath: '$(Build.ArtifactStagingDirectory)'
+    publishLocation: 'pipeline'
+
+- task: Bash@3
+  condition: succeededOrFailed()
+  inputs:
+    targetType: 'inline'
+    script: chmod 755 $(Agent.WorkFolder)/_tasks/AllureGenerate_5c975f9d-1c3a-469f-b7c2-8907bf3eacfb/1.0.0/node_modules/allure-commandline/dist/bin/allure
+
+# Publish Allure report to Azure Pipelines
 - task: PublishTestResults@2
   displayName: publish allure test results
   inputs:
