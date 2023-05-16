@@ -39,21 +39,3 @@ steps:
   inputs:
     targetPath: '$(Build.ArtifactStagingDirectory)'
     publishLocation: 'pipeline'
-
-- task: Bash@3
-  condition: succeededOrFailed()
-  inputs:
-    targetType: 'inline'
-    script: chmod 755 $(Agent.WorkFolder)/_tasks/AllureGenerate_5c975f9d-1c3a-469f-b7c2-8907bf3eacfb/1.0.0/node_modules/allure-commandline/dist/bin/allure
-
-# Publish Allure report to Azure Pipelines
-- task: PublishTestResults@2
-  displayName: publish allure test results
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '*.html'
-    searchFolder: 'allure-report'
-    testRunTitle: ublish allure test results
-    buildConfiguration: debug
-    mergeTestResults: true
-    
