@@ -9,6 +9,6 @@ Then I should see web audit results
 @smoke1
 Scenario: NewTour Login
 Given Start new tour application
-When Enter user name "usertest1"
+When Enter user name "usertest2"
 Then I should see web audit results
 
