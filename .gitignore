@@ -2,6 +2,7 @@
 /cypress/screenshots/
 /cypress/videos/
 /cypress/reportsCucumber/
+/cypress/cucumber-json/
 
 # Node modules
 /node_modules/
