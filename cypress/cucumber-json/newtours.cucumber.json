@@ -14,7 +14,7 @@
         "name": "Watson Orchestration application start",
         "tags": [
           {
-            "name": "@Smoke",
+            "name": "@Smoke1",
             "line": 3
           }
         ],
@@ -26,8 +26,7 @@
             "line": 5,
             "name": "Start Watson Orchestration application",
             "result": {
-              "status": "passed",
-              "duration": 6617000000
+              "status": "skipped"
             }
           },
           {
@@ -36,8 +35,7 @@
             "line": 6,
             "name": "Verify the title",
             "result": {
-              "status": "passed",
-              "duration": 24000000
+              "status": "skipped"
             }
           }
         ]
@@ -62,7 +60,7 @@
             "name": "Start Watson Orchestration application",
             "result": {
               "status": "passed",
-              "duration": 3263000000
+              "duration": 7120000000
             }
           },
           {
@@ -72,7 +70,7 @@
             "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 16000000
             }
           },
           {
@@ -82,7 +80,37 @@
             "name": "Enter user name",
             "result": {
               "status": "passed",
-              "duration": 2968000000
+              "duration": 2738000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Click on continue button",
+            "result": {
+              "status": "passed",
+              "duration": 27850000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Enter Password",
+            "result": {
+              "status": "passed",
+              "duration": 747000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "Click on Login button",
+            "result": {
+              "status": "passed",
+              "duration": 1974000000
             }
           }
         ]

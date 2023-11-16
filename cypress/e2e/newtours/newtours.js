@@ -54,7 +54,7 @@ And('Click on continue button', () => {
 
 // Step definition for "And Enter Password"
 And('Enter Password', () => {
-    login.typePassword("yourPassword"); 
+    login.typePassword("TestPreprodwa@12345!!"); 
 }) 
 
 // Step definition for "And Click on Login button"

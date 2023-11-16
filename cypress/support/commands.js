@@ -19,12 +19,10 @@ import { logToFile } from '../support/utils'; // Adjust the path accordingly
       export function clickElement(elementToClick) {
         try {
             logToFile(`INFO : Going to click on element ${elementToClick}`, 'cypress/logs/test.log');
-            cy.wait(60);
             cy.get(elementToClick) 
-              .click();
-              cy.wait(120);
-              cy.url().should('include', 'wo-ibm-stg.verify.ibm.com');
-              cy.wait(600);
+            .should('be.visible')
+            .should('be.enabled')
+            .click({ force: true })
             logToFile(`INFO :Clicked on element ${elementToClick}`, 'cypress/logs/test.log');
           } catch (error) {
             // Handle the error, for example, log it

@@ -1,6 +1,6 @@
 import * as commandFunctions from '../../support/commands';
 const EMAILUSERNAME = 'input[id="username-input"]'
-const BTN_CONTINUE ='[id="login-btn"]'
+const BUTTONCONTINUE = 'button[id="login-btn"]'
 const PASSWORD = 'input[id="password"]'
 const BTN_LOGIN ='[id="signinbutton"]'
 const PAGE_SPINNER = '[id="civispinnerdiv"]'
@@ -15,7 +15,8 @@ class LoginPage {
   }
 
   clickContinueButton() { 
-    commandFunctions.clickElement(BTN_CONTINUE)
+    cy.pause();
+    commandFunctions.clickElement(BUTTONCONTINUE);
     return this;
   }
 

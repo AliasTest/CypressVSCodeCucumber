@@ -16,8 +16,14 @@ module.exports = defineConfig({
       return config; 
     },
     specPattern: "cypress/e2e/*.feature",
-    "defaultCommandTimeout": 15000,
-    "pageLoadTimeout": 120000,
-    baseUrl: 'https://staging-wa.watson-orchestrate.ibm.com/login', // this is your app
+    requestTimeout: 100000,
+    numTestsKeptInMemory: 1,
+    defaultCommandTimeout: 100000,
+    // experimentalSourceRewriting: true,
+    chromeWebSecurity: false,
+    pageLoadTimeout: 100000,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
+    baseUrl: 'https://preprod.dl.watson-orchestrate.ibm.com/login', 
   },
 });
