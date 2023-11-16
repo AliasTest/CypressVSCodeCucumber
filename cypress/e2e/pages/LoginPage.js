@@ -4,7 +4,7 @@ const userNameInput = 'input[id="username-input"]'
 
 class LoginPage {
 
-  typeUserName(inputText) {    
+  typeUserName(inputText) { 
     commandFunctions.sendTextToInputElement(inputText, userNameInput)
     return this;
   }

@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Watson Orchestration Verification",
+    "line": 1,
+    "id": "watson-orchestration-verification",
+    "tags": [],
+    "uri": "newtours.feature",
+    "elements": [
+      {
+        "id": "watson-orchestration-verification;watson-orchestration-application-start",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Watson Orchestration application start",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Start Watson Orchestration application",
+            "result": {
+              "status": "passed",
+              "duration": 7223000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify the title",
+            "result": {
+              "status": "passed",
+              "duration": 20000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "watson-orchestration-verification;watson-orchestration-application-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Watson Orchestration application login",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Start Watson Orchestration application",
+            "result": {
+              "status": "passed",
+              "duration": 3989000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify the title",
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Enter user name",
+            "result": {
+              "status": "passed",
+              "duration": 2531000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

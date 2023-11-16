@@ -33,6 +33,7 @@ const login = new loginpage()
 
 
 Given('Start Watson Orchestration application', () => {
+ 
     cy.visit('/')
 })
 
@@ -44,6 +45,6 @@ Then('I should see web audit results', () => {
       cy.lighthouse(lighthousemetrics, opts)})
 
 When('Enter user name' , () => {
-    cy.pause();
+    
     login.typeUserName("test1")
 }) 

@@ -1,14 +1,20 @@
-const fs = require('fs');
-
 export function logToFile(message, filePath) {
-  fs.appendFileSync(filePath, `${message}\n`);
+  cy.writeFile(filePath, `${message}\n`, { flag: 'a+' });
 }
 
 export function createNewLogFile(filePath) {
   // Delete existing log file (if it exists)
-  if (fs.existsSync(filePath)) {
-    fs.unlinkSync(filePath);
-  }
+  deleteFile(filePath);
+
   // Create a new log file
-  fs.writeFileSync(filePath, '');
+  cy.writeFile(filePath, '');
+}
+
+export function deleteFile(filePath) {
+  // Delete the file
+  if (Cypress.platform === 'win32') {
+    cy.exec(`del /q ${filePath}`);
+  } else {
+    cy.exec(`rm -f ${filePath}`);
+  }
 }
