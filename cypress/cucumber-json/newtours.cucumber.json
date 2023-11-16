@@ -27,7 +27,7 @@
             "name": "Start Watson Orchestration application",
             "result": {
               "status": "passed",
-              "duration": 8979000000
+              "duration": 7599000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 95000000
+              "duration": 15000000
             }
           }
         ]
@@ -62,7 +62,7 @@
             "name": "Start Watson Orchestration application",
             "result": {
               "status": "passed",
-              "duration": 4184000000
+              "duration": 4128000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Enter user name",
             "result": {
               "status": "passed",
-              "duration": 42945000000
+              "duration": 74487000000
             }
           }
         ]

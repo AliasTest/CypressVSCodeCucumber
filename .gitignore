@@ -1,0 +1,15 @@
+# Cypress generated files
+/cypress/screenshots/
+/cypress/videos/
+/cypress/reportsCucumber/
+
+# Node modules
+/node_modules/
+/allure-report/
+
+# Configuration file
+/cypress.env.json
+
+# Temporary files
+*.log
+*.tmp
