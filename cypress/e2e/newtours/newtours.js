@@ -28,6 +28,7 @@ const opts = {
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
 import loginpage from '../pages/LoginPage'
 
+
 const login = new loginpage()
 
 
@@ -44,5 +45,5 @@ Then('I should see web audit results', () => {
 
 When('Enter user name' , () => {
     cy.pause();
-    login.typeUserName("username")
+    login.typeUserName("test1")
 }) 

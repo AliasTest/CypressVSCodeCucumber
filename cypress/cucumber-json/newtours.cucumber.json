@@ -27,7 +27,7 @@
             "name": "Start Watson Orchestration application",
             "result": {
               "status": "passed",
-              "duration": 7139000000
+              "duration": 8979000000
             }
           },
           {
@@ -37,7 +37,7 @@
             "name": "Verify the title",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 95000000
             }
           }
         ]
@@ -62,7 +62,7 @@
             "name": "Start Watson Orchestration application",
             "result": {
               "status": "passed",
-              "duration": 3465000000
+              "duration": 4184000000
             }
           },
           {
@@ -81,8 +81,8 @@
             "line": 13,
             "name": "Enter user name",
             "result": {
-              "status": "failed",
-              "error_message": "TypeError: login.typeUserName is not a function\n    at Context.eval (cypress/e2e/newtours/newtours.js:47:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+              "status": "passed",
+              "duration": 42945000000
             }
           }
         ]
