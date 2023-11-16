@@ -1,0 +1,38 @@
+[
+  {
+    "description": "As a valid user, get georest users",
+    "keyword": "Feature",
+    "name": "APITest",
+    "line": 1,
+    "id": "apitest",
+    "tags": [],
+    "uri": "apitest.feature",
+    "elements": [
+      {
+        "id": "apitest;get-georest-users",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Get georest users",
+        "tags": [
+          {
+            "name": "@Sanity",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Get georest users",
+            "result": {
+              "status": "passed",
+              "duration": 408000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

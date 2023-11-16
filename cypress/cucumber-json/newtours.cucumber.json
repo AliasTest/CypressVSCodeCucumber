@@ -1,0 +1,92 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Watson Orchestration Verification",
+    "line": 1,
+    "id": "watson-orchestration-verification",
+    "tags": [],
+    "uri": "newtours.feature",
+    "elements": [
+      {
+        "id": "watson-orchestration-verification;watson-orchestration-application-start",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Watson Orchestration application start",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Start Watson Orchestration application",
+            "result": {
+              "status": "passed",
+              "duration": 7139000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "Verify the title",
+            "result": {
+              "status": "passed",
+              "duration": 17000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "watson-orchestration-verification;watson-orchestration-application-login",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "Watson Orchestration application login",
+        "tags": [
+          {
+            "name": "@Smoke",
+            "line": 9
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "Start Watson Orchestration application",
+            "result": {
+              "status": "passed",
+              "duration": 3465000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "Verify the title",
+            "result": {
+              "status": "passed",
+              "duration": 8000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "Enter user name",
+            "result": {
+              "status": "failed",
+              "error_message": "TypeError: login.typeUserName is not a function\n    at Context.eval (cypress/e2e/newtours/newtours.js:47:10)\n    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)\n    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

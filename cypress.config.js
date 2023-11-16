@@ -16,6 +16,8 @@ module.exports = defineConfig({
       return config; 
     },
     specPattern: "cypress/e2e/*.feature",
-    baseUrl: 'https://demo.guru99.com/test/newtours/', // this is your app
+    "defaultCommandTimeout": 15000,
+    "pageLoadTimeout": 60000,
+    baseUrl: 'https://staging-wa.watson-orchestrate.ibm.com/login', // this is your app
   },
 });

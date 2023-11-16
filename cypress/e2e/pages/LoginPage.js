@@ -1,9 +1,9 @@
-const userNameInput = 'input[name="userName"]'
+const userNameInput = 'input[id="username-input"]'
 
 
 class LoginPage {
 
-  typeUserName(username) {    
+  typeUserName1(username) {    
     cy.get(userNameInput).click();
     cy.get(userNameInput).clear();
     cy.get(userNameInput).type(username)

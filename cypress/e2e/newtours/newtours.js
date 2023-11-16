@@ -31,17 +31,18 @@ import loginpage from '../pages/LoginPage'
 const login = new loginpage()
 
 
-Given('Start new tour application', () => {
+Given('Start Watson Orchestration application', () => {
     cy.visit('/')
 })
 
-When('Verify the title', () => {
-    cy.title().should('eq', 'Welcome: Mercury Tours')
+Then('Verify the title', () => {
+    cy.title().should('include', "IBM");
 })
 
 Then('I should see web audit results', () => {
       cy.lighthouse(lighthousemetrics, opts)})
 
-When('Enter user name {string}', (username) => {
-    login.typeUserName(username)
+When('Enter user name' , () => {
+    cy.pause();
+    login.typeUserName("username")
 }) 
