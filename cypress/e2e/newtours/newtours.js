@@ -25,7 +25,7 @@ const opts = {
     },
 }
 
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 import loginpage from '../pages/LoginPage'
 
 
@@ -45,6 +45,19 @@ Then('I should see web audit results', () => {
       cy.lighthouse(lighthousemetrics, opts)})
 
 When('Enter user name' , () => {
-    
-    login.typeUserName("test1")
+    login.typeUserName("svt-stage-7@wo-cd.testinator.com")
 }) 
+
+And('Click on continue button', () => {
+    login.clickContinueButton();
+})
+
+// Step definition for "And Enter Password"
+And('Enter Password', () => {
+    login.typePassword("yourPassword"); 
+}) 
+
+// Step definition for "And Click on Login button"
+And('Click on Login button', () => {
+    login.clickLoginButton();
+});
