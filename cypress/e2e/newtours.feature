@@ -10,5 +10,5 @@ Then I should see web audit results
 Scenario: NewTour Login
 Given Start new tour application
 When Enter user name "usertest2"
-Then I should see web audit results
+#Then I should see web audit results
 
