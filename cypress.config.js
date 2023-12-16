@@ -17,5 +17,6 @@ module.exports = defineConfig({
     },
     specPattern: "cypress/e2e/*.feature",
     baseUrl: 'https://demo.guru99.com/test/newtours/', // this is your app
+    video: false,
   },
 });
